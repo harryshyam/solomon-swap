@@ -9,7 +9,7 @@ export default function Home() {
 
   const [currency, setCurrency] = useState('INR')
   const [sellAmount, setSellAmount] = useState('')
-  const [quote, setQuote] = useState(null)
+  const [quote, setQuote] = useState<any>(null)
   const [loading, setLoading] = useState(false)
 
   const handleFetchQuote = async () => {
